@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', 'UserController@display')->name('names');
+Route::post('/', 'TimeController@start')->name('start');
